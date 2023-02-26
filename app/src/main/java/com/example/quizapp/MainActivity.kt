@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             else
             {
                 val intent :Intent=Intent(this,QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME,ipText.text.toString())
                 startActivity(intent)
                 /*
                 * finish() method closes the current activity
